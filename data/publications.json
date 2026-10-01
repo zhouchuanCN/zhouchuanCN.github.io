@@ -1,0 +1,128 @@
+[
+  {
+    "id": "logiconbench",
+    "title": "LogiConBench: Benchmarking Logical Consistencies of LLMs",
+    "authors": ["Zheng Chen*", "Chuan Zhou*", "Fengxiang Cheng", "Yip Tin Po", "Fenrong Liu", "Yisen Wang", "Jiajun Chai", "Xiaohan Wang", "Guojun Yin", "Wei Lin", "Haoxuan Li", "Bo Li", "Zhouchen Lin"],
+    "year": 2026,
+    "venue": "ICLR",
+    "venue_full": "International Conference on Learning Representations",
+    "topic": "llm",
+    "selected": true,
+    "links": {
+      "Paper": "https://openreview.net/forum?id=ULEHJkolxB",
+      "PDF": "https://openreview.net/pdf?id=ULEHJkolxB"
+    }
+  },
+  {
+    "id": "open-world",
+    "title": "Open-World LLM Logical Reasoning",
+    "authors": ["Ye Mo", "Chuan Zhou", "Fengxiang Cheng", "Jialin Yu", "Liangming Pan", "Fenrong Liu", "Sheng Zhou", "Haoxuan Li", "Zhouchen Lin", "Philip Torr"],
+    "year": 2026,
+    "venue": "ICML",
+    "venue_full": "International Conference on Machine Learning",
+    "topic": "llm",
+    "selected": false,
+    "links": {
+      "Paper": "https://openreview.net/forum?id=hEcxsQkZpW",
+      "PDF": "https://openreview.net/pdf?id=hEcxsQkZpW"
+    }
+  },
+  {
+    "id": "travel-time",
+    "title": "Towards Robust Travel Time Estimation: An Out-of-Distribution Generalization Approach",
+    "authors": ["Xiwen Jiang", "Chuan Zhou", "Xiaofeng Meng", "Haoxuan Li"],
+    "year": 2026,
+    "venue": "KDD",
+    "venue_full": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining, V.2",
+    "topic": "causal",
+    "selected": false,
+    "distinction": "Oral",
+    "links": {
+      "Paper": "https://doi.org/10.1145/3770855.3817802"
+    }
+  },
+  {
+    "id": "delayed-feedback",
+    "title": "Uplift Modeling with Delayed Feedback: Identifiability and Algorithms",
+    "authors": ["Chunyuan Zheng", "Anpeng Wu", "Chuan Zhou", "Taojun Hu", "Qingying Chen", "Hongyi Liu", "Chenxi Li", "Huiyou Jiang", "Haoxuan Li", "Zhouchen Lin"],
+    "year": 2026,
+    "venue": "AAAI",
+    "venue_full": "AAAI Conference on Artificial Intelligence",
+    "topic": "causal",
+    "selected": false,
+    "links": {
+      "Paper": "https://ojs.aaai.org/index.php/AAAI/article/view/38686",
+      "PDF": "https://ojs.aaai.org/index.php/AAAI/article/view/38686/42648"
+    }
+  },
+  {
+    "id": "steps",
+    "title": "A Self-Triggered Agentic Push Recommendation System",
+    "authors": ["Zhao-Yu Zhang", "Qingying Chen", "Chunyuan Zheng", "Jing Zhou", "Jian Sun", "Siqi Chen", "Leiying Chen", "Chuan Zhou", "Huiyou Jiang", "Xin Tao", "Haoxuan Li", "Zhouchen Lin"],
+    "year": 2026,
+    "venue": "RecSys",
+    "venue_full": "ACM Conference on Recommender Systems · Industry Track",
+    "topic": "recommendation",
+    "selected": false,
+    "distinction": "Oral",
+    "links": {
+      "Paper": "https://doi.org/10.1145/3773078.3831932",
+      "PDF": "https://arxiv.org/pdf/2608.01949"
+    }
+  },
+  {
+    "id": "counterfactual",
+    "title": "Counterfactual Implicit Feedback Modeling",
+    "authors": ["Chuan Zhou", "Lina Yao", "Haoxuan Li", "Mingming Gong"],
+    "year": 2025,
+    "venue": "NeurIPS",
+    "venue_full": "Conference on Neural Information Processing Systems",
+    "topic": "causal recommendation",
+    "selected": true,
+    "links": {
+      "Paper": "https://openreview.net/forum?id=PlcH6HJku4",
+      "PDF": "https://openreview.net/pdf?id=PlcH6HJku4"
+    }
+  },
+  {
+    "id": "tspf",
+    "title": "A Two-Stage Pretraining-Finetuning Framework for Treatment Effect Estimation with Unmeasured Confounding",
+    "authors": ["Chuan Zhou*", "Yaxuan Li*", "Chunyuan Zheng", "Haiteng Zhang", "Min Zhang", "Haoxuan Li", "Mingming Gong"],
+    "year": 2025,
+    "venue": "KDD",
+    "venue_full": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining, V.1",
+    "topic": "causal",
+    "selected": true,
+    "links": {
+      "Paper": "https://doi.org/10.1145/3690624.3709161",
+      "PDF": "https://arxiv.org/pdf/2501.08888"
+    }
+  },
+  {
+    "id": "phased-ift",
+    "title": "Phased Instruction Fine-Tuning for Large Language Models",
+    "authors": ["Wei Pang*", "Chuan Zhou*", "Xiao-Hua Zhou", "Xiaojie Wang"],
+    "year": 2024,
+    "venue": "ACL",
+    "venue_full": "Findings of the Association for Computational Linguistics: ACL · pp. 5735–5748",
+    "topic": "llm",
+    "selected": true,
+    "links": {
+      "Paper": "https://aclanthology.org/2024.findings-acl.341/",
+      "PDF": "https://aclanthology.org/2024.findings-acl.341.pdf",
+      "Code": "https://github.com/xubuvd/PhasedSFT"
+    }
+  },
+  {
+    "id": "umvue-dr",
+    "title": "UMVUE-DR: Uniformly Minimum Variance Unbiased Doubly Robust Learning with Reduced Bias and Variance for Debiased Recommendation",
+    "authors": ["Chunyuan Zheng", "Taojun Hu", "Chuan Zhou", "Xiao-Hua Zhou"],
+    "year": 2024,
+    "venue": "ICDM",
+    "venue_full": "IEEE ICDM Workshop on Causal Representation Learning",
+    "topic": "causal recommendation",
+    "selected": false,
+    "distinction": "Workshop · Oral",
+    "links": {}
+  }
+]

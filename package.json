@@ -1,0 +1,15 @@
+{
+  "name": "chuan-zhou-homepage",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chuan Zhou's academic homepage, adapted from Minimal Light.",
+  "scripts": {
+    "dev": "python3 -m http.server 4173 --bind 127.0.0.1",
+    "build": "python3 scripts/build.py",
+    "browser:install": "node scripts/install-browser.mjs",
+    "check": "node scripts/check-site.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  }
+}
