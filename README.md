@@ -1,6 +1,6 @@
 # Chuan Zhou · Academic Homepage
 
-英文个人学术主页，以 [Minimal Light](https://github.com/yaoyao-liu/minimal-light) 的静态 HTML 版本为基础，重新设计了排版、配色、导航与论文展示。使用你提供的照片，包含英文简介、研究方向、论文、教育经历和学术服务。个人链接仅保留 Email 和 Google Scholar。
+英文个人学术主页，以 [Minimal Light](https://github.com/yaoyao-liu/minimal-light) 的静态 HTML 版本为基础，重新设计了排版、配色、导航与论文展示。使用你提供的照片，包含英文简介、论文和学术服务。个人链接仅保留 Email 和 Google Scholar。
 
 网站为纯静态 HTML / CSS / JavaScript，可部署到 GitHub Pages。访问网站不依赖 Python、Node、数据库、外部字体或 CDN。Python 用于生成页面；Playwright 仅用于检查页面。
 
@@ -38,7 +38,7 @@ git remote add origin https://github.com/YOUR_USERNAME/YOUR_USERNAME.github.io.g
 git push -u origin main
 ```
 
-当前交付为本地网站，没有创建远程仓库或发布到公网。
+线上主页：<https://zhouchuancn.github.io/>。推送到 `main` 后由 GitHub Actions 自动检查和发布。
 
 ## 编辑网页文字
 
@@ -47,7 +47,7 @@ git push -u origin main
 | 内容 | 修改文件 |
 | --- | --- |
 | 论文、作者、年份、会议、论文链接、精选标记 | `data/publications.json` |
-| 标题、个人信息、英文简介、研究方向、教育、联系方式和服务 | `templates/index.html` |
+| 标题、个人信息、英文简介、联系方式和学术服务 | `templates/index.html` |
 | 首页配色、字号、布局 | `assets/css/style.css` |
 | 照片 | `assets/images/chuan-zhou.jpg` |
 
@@ -57,7 +57,7 @@ git push -u origin main
 <h2 id="about-heading" class="intro-heading">About me</h2>
 ```
 
-将 `About me` 改为 `Biography`，保留其他部分。修改邮箱时，同时更新 `mailto:` 后面的地址和页面展示的地址。
+将 `About me` 改为 `Biography`，保留其他部分。修改邮箱时，同时更新 `mailto:` 后面的地址和页面展示的地址。删除栏目时，同时移除桌面导航 `.desktop-nav` 和手机导航 `#mobile-nav` 中的对应链接，并更新相关的页面检查。
 
 论文信息在 `data/publications.json` 中修改：`title` 为题目，`authors` 为作者列表，`year` 为年份，`venue` 为会议，`links` 为原文等链接。保留 JSON 中的英文双引号、逗号和括号。
 
@@ -90,7 +90,7 @@ npm run check
 
 ## 内容与来源
 
-- 经历、学位、日期、论文、共同一作、Oral 标记以提供的中文简历为依据。
+- 简介、论文、共同一作、Oral 标记以提供的中文简历及后续修改为依据；已按要求移除 Education 区块及其导航入口。
 - 邮箱按用户指定更新为 `chuan.zhou@student.unimelb.edu.au`。
 - Google Scholar 通过匹配教育经历和论文的公开资料确认。已移除个人 OpenReview、ORCID 链接，以及研究经历部分。
 - 已接入有公开出处的论文链接。UMVUE-DR 未添加未经核实的论文下载地址。

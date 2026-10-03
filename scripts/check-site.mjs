@@ -96,11 +96,9 @@ try {
   await page.keyboard.press("Escape");
   assert.equal(await page.locator("#mobile-nav").isVisible(), false);
   await page.locator(".menu-toggle").click();
-  await page.locator('#mobile-nav a[href="#education"]').click();
+  await page.locator('#mobile-nav a[href="#service"]').click();
   assert.equal(await page.locator("#mobile-nav").isVisible(), false);
-  assert.equal(new URL(page.url()).hash, "#education");
-  await page.locator(".thesis summary").first().click();
-  assert.equal(await page.locator(".thesis").first().getAttribute("open"), "");
+  assert.equal(new URL(page.url()).hash, "#service");
 
   const noJsContext = await browser.newContext({ javaScriptEnabled: false });
   const noJsPage = await noJsContext.newPage();
@@ -111,7 +109,7 @@ try {
   await noJsContext.close();
   assert.deepEqual(errors, []);
   console.log("PASS: root and project paths; publication filters; local links.");
-  console.log("PASS: 320–1440px layouts; mobile navigation; keyboard dismissal; thesis details.");
+  console.log("PASS: 320–1440px layouts; mobile navigation; keyboard dismissal.");
   console.log("PASS: no-JavaScript content; no missing assets or browser errors.");
   console.log(`Screenshots: ${artifacts}`);
 } finally {

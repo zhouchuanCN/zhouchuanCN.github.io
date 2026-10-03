@@ -10,7 +10,7 @@
 - 当前学位、机构和时间采用简历：墨尔本大学统计学博士，2025 年 9 月至今。
 - [OpenReview 个人资料](https://openreview.net/profile?id=~Chuan_Zhou5) 中的教育摘要尚为北大硕士，未用于覆盖简历里的最新经历。该资料中的博士导师、北大学习经历和论文列表相互匹配，用于核对学术账号链接。
 - [Google Scholar](https://scholar.google.com/citations?user=Ceo75WwAAAAJ&hl=en) 链接来自上述 OpenReview 资料。
-- 按用户要求移除个人 OpenReview、ORCID 链接、研究经历，以及简介中的实习和访问描述；不再生成或发布 CV。
+- 按用户要求移除个人 OpenReview、ORCID 链接、Research experience 和 Education 区块；不再生成或发布 CV。个人简介以 `templates/index.html` 中的后续人工编辑内容为准。
 - 主页的简短研究方向说明是根据简历概括的英文表述，不额外声称实验成果。
 
 ## 论文链接
@@ -44,6 +44,6 @@ Phased IFT 的代码地址 `https://github.com/xubuvd/PhasedSFT` 见该论文的
 
 ## 验证范围
 
-自动检查覆盖页面内资源与站内链接、所有论文筛选、320 / 390 / 768 / 1024 / 1440 px 页面宽度、手机菜单及 Escape 关闭、学位论文展开、关闭 JavaScript 的全文可读性，以及 GitHub Pages 项目子路径。
+自动检查覆盖页面内资源与站内链接、所有论文筛选、320 / 390 / 768 / 1024 / 1440 px 页面宽度、手机菜单及 Escape 关闭、关闭 JavaScript 的全文可读性，以及 GitHub Pages 项目子路径。
 
-外站可能有验证码、访问地区限制或出版商登录要求；添加论文页链接不表示保证每个外站或 PDF 在所有网络环境都可直接下载。GitHub Actions 配置已准备，尚未在用户的远程仓库实际运行。
+外站可能有验证码、访问地区限制或出版商登录要求；添加论文页链接不表示保证每个外站或 PDF 在所有网络环境都可直接下载。GitHub Actions 通过 `.github/workflows/pages.yml` 构建并发布 `_site/`。
